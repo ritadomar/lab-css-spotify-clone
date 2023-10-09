@@ -1,8 +1,236 @@
-/*
-Colors:
+/* COLOR VARIABLES */
+:root {
+  --text: #1a1a1a;
+  --green: #00b172;
+  --white: #ffffff;
+}
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+/* IMPORTING FONT */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans');
 
-*/
+/* RESETTING STYLES */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* CHANGING FONT */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* DEFINING BASE STYLES */
+/* section titles */
+.section-title {
+  font-size: 4.5rem;
+  font-weight: 600;
+  text-decoration: underline 5px;
+  text-underline-offset: 1.5rem;
+}
+
+/* features container */
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* features */
+.feature {
+  display: flex;
+  flex-direction: column;
+}
+
+/* feature titles */
+.feature-name {
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+
+.description {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 130%;
+}
+
+/* NAVIGATION */
+#top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  padding: 20px 24px 20px 40px;
+
+  box-sizing: border-box;
+
+  background-color: var(--white);
+}
+
+/* resizing logo */
+#logo {
+  width: 280px;
+}
+
+/* navigation links box */
+.nav-links {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* navigation links */
+.nav-links a {
+  font-size: 2.6rem;
+  font-weight: 300;
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* CONTENT */
+main {
+  margin-top: 124px;
+}
+
+/* hero section */
+#hero {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  background-image: url('../images/landing.jpg');
+  background-size: cover;
+}
+
+.title {
+  color: var(--white);
+  font-size: 9.2rem;
+  font-weight: 600;
+  letter-spacing: 2%;
+}
+
+.subtitle {
+  width: 55%;
+
+  color: var(--white);
+  font-size: 3.6rem;
+  font-weight: 300;
+  line-height: 150%;
+  text-align: center;
+}
+
+/* what section */
+#what {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 70vh;
+
+  box-sizing: border-box;
+
+  padding: 56px;
+}
+
+.black-title {
+  color: var(--text);
+  text-decoration-color: var(--green);
+}
+
+.horizontal {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.center {
+  width: 33%;
+
+  align-items: center;
+  gap: 32px;
+}
+
+.feature-icon {
+  height: 120px;
+}
+
+.green-feature {
+  color: var(--green);
+}
+
+.center-align {
+  text-align: center;
+  width: 70%;
+}
+
+/* green section */
+#green {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  background-color: var(--green);
+
+  box-sizing: border-box;
+
+  margin: 56px;
+  padding: 102px;
+}
+
+.white-title {
+  color: var(--white);
+  text-decoration-color: var(--white);
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vertical {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 56px;
+
+  width: 30%;
+}
+
+.left {
+  gap: 32px;
+}
+
+.white-feature {
+  color: var(--white);
+}
+
+.left-align {
+  color: var(--white);
+  font-size: 2.6rem;
+  line-height: 150%;
+}
+
+.white-icon {
+  width: 170px;
+  position: absolute;
+  left: 45%;
+}
+
+.app-image {
+  width: 28%;
+}
